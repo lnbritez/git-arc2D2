@@ -1,0 +1,12 @@
+#!/bin/bash
+
+lintResult=$(arc lint)
+
+echo $?
+echo "---------"
+if [ $? -ne 0 ]; then
+ echo "hay error"
+else
+ echo "no hay error"
+fi
+
